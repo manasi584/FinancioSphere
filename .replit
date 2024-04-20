@@ -1,10 +1,19 @@
-entrypoint="index.html"
-hidden=[".config"]
-modules = ["web:v2-20230623-0b7a606"]
+# modules = ["python-3.10:v18-20230807-322e88b"]
+run = "python app.py"
 
-[nix]
-channel = "stable-23_11"
+# [nix]
+# channel = "stable-23_05"
 
-[deployment]
-publicDir = "/"
-deploymentTarget = "static"
+# [unitTest]
+# language = "python3"
+
+# [gitHubImport]
+# requiredFiles = [".replit", "replit.nix"]
+
+# [deployment]
+# run = ["sh", "-c", "python app.py"]
+# deploymentTarget = "cloudrun"
+
+# [[ports]]
+# localPort = 5000
+# externalPort = 80
